@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../css/graficos.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>Layouts Fluidos</h1>
+    <p>Adapta a largura da tela</p>
+
+    <section>
+        <h2>100% width / largura</h2>
+
+        <div class="width-100">
+
+            <nav>
+                <ul class="navegacao"> <!-- Lista não ordenada-->
+                    <li><a href="../homepage.html" target="meu_iframe">Home</a></li>
+                    <li><a href="../06-sobre.html">Sobre</a></li>
+                    <li><a href="../06-formularios.html">Contato</a> <!-- Referencia linkando outro arquivo html -->
+                    <li><a href="https://ebaconline.com.br" target="_blank"> EBAC</a></li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <article>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, id doloremque. Quibusdam, odit enim
+            porro beatae itaque dolore velit voluptas vero soluta reiciendis accusamus quod accusantium nesciunt
+            nobis fuga earum.
+
+            <div class="fixed-width">
+                largura fixa
+            </div>
+
+
+            <div class="background">
+                Repetir imagem na horizontal
+            </div>
+
+            <div>
+
+                <div id="grafico-01">
+                    <img class="filtro" src="./images/coffee-square.jpg" alt="Café">
+                </div>
+
+                <div class="coluna">Coluna 1</div>
+                <div class="coluna">Coluna 2</div>
+                <div class="coluna">Coluna 3</div>
+
+            </div>
+
+            <div class="coluna">
+
+                <h2>Layout em coluna</h2>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cAgwwn9jEjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="coluna">
+
+                <div id="grafico-01">
+                    <img class="filtro" src="./images/coffee-square.jpg" alt="Café">
+                </div>
+            </div>
+            <div class="coluna coluna-3">
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, modi nihil ea nam libero id quis
+                mollitia. Alias, officiis cum quod reprehenderit ipsam dicta, velit, quas tempora officia qui
+                fugiat.Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, modi nihil ea nam libero id
+                quis mollitia. Alias, officiis cum quod reprehenderit ipsam dicta, velit, quas tempora officia qui
+                fugiat.Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, modi nihil ea nam libero id
+                quis mollitia. Alias, officiis cum quod reprehenderit ipsam dicta, velit, quas tempora officia qui
+                fugiat.
+
+            </div>
+
+            <div class="coluna">
+
+                <!-- Cria moldura para carregar uma pagina dentro da outra-->
+                <iframe width="100%" height="400px" src="../02-listas-e-links.html" name="meu_iframe"></iframe>
+            </div>
+
+            <div class="coluna coluna-100w">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58515.160188101654!2d-46.601024389257795!3d-23.561348796448726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ceb1eb771f%3A0xe904f6a669744da1!2sMuseu%20de%20Arte%20de%20S%C3%A3o%20Paulo%20Assis%20Chateaubriand!5e0!3m2!1spt-BR!2sbr!4v1676562707895!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </article>
+
+    </section>
+
+
+</body>
+
+</html>

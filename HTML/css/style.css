@@ -1,0 +1,219 @@
+/* Arquivo CSS geral com estilos dos elementos de todas as paginas */
+
+* { /* seletor universal */
+  box-sizing: border-box;
+}
+
+html{ /* Seletor Raiz */
+	margin: 0;
+	padding: 0;
+	font-family: serif;
+	font-size: 62.5%; /* equivale a 10px */
+}
+
+body {
+  background-color: white;
+}
+
+
+h1, h2, p, li { /* Seletor Elemento */
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	font-size: 2.5rem;
+}
+
+a {
+	color: #336; 
+	text-decoration: none;
+}
+
+#primeiro-link a { /*o 'a' sinaliza que qualquer link que tenha o id vai ser afetado */
+	color: #933;
+}
+
+ul {
+	background-color: transparent;
+	font-size: 20px;
+}
+
+ul li {
+	font-size: .8em; /* define tamanho em 80% em relacao ao elemento ul, equivale a 16px */
+	width: 80%;
+	height: 3rem;
+}
+
+p {
+	font-size: 1.6rem; /* equivalente a 16px */
+}
+
+h2 {
+	font-size: 2rem; /* equivalente a 20px */
+}
+
+.navegacao li{ /* seletor classe, precisa adicionar a classe onde for aplicado */
+	background-color: #CCC;
+	padding: 0.5rem;
+	border: 1px solid white;
+	width: 20rem;
+}
+
+.navegacao li:hover {
+	
+	background-color: white;
+}
+
+.navegacao a { /* 'a' alterar as cores de links */
+	color: #000080;
+}
+
+form div {
+	background: #fff;
+	border: 0;
+	border-bottom: 1px solid #33f;
+	margin: 1rem 1rem;
+	padding: 1rem;
+
+}
+
+label {
+	margin-bottom: 0.5rem;
+	font-size: 2rem;
+	font-family: open-sans;
+	font-weight: bold;
+	color: darkblue;
+}
+
+input {
+	padding: 0.5rem;
+}
+
+[type="text"], [type="email"], textarea, label { /* Seletor Atributo */
+	width: 100%;
+	display: block;
+}
+
+/* Style the header */
+header {
+  background-color: #DDDDDD;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+   
+  background: transparent;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 1rem;
+  width: 70%;
+  background-color: transparent;
+}
+
+/* Clear floats after the columns */
+section::after {
+  background: #ccc;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: ghostwhite;
+  padding: 3px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+/* @media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+} */
+
+/* Mobile First */
+
+@media (min-width: 769px) {
+
+	body {
+	  background-color: teal;
+	  color: #fff
+	}
+  
+	p, h3, li, a {
+	  color: #fff;
+	}
+
+	footer p {
+		color: #882828;
+	}
+
+	header h2 {
+		color: purple
+	}
+  }
+  
+  /* Tablet */
+  @media (max-width: 768px) {
+
+	body {
+		background-color: rgba(0, 128, 128, 0.582);
+		color: #fff
+	  }
+	
+	  p, h3, li, a {
+		color: #fff;
+	  }
+
+	  footer p {
+		color: #882828;
+	}
+	
+	nav {
+	  width: 30vw;
+	}
+	article {
+	  width: 70vw;
+	}
+	.coluna {
+	  width: 100%;
+	  min-width: unset;
+	}
+  }
+  
+  /* Smartphone */
+  @media (max-width: 425px) {
+
+	body {
+		background-color: rgba(0, 128, 128, 0.185);
+		color: #333
+	  }
+	
+	  p, h3, li, a {
+		color: #333;
+	  }
+  
+	nav,
+	article,
+	.coluna {
+	  width: 100%;
+	  min-width: 320px;
+	}
+  
+  }
+

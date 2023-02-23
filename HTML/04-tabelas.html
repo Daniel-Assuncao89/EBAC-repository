@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Tabelas e Layouts Tabelados</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Tabelas</h1>
+
+		<table border="1" width="100%"> <!-- border coloca o entorno da tabela e width ajusta ao tamanho da pagina -->
+			<thead> <!-- titulo para cada coluna -->
+				<tr>
+					<th>Coluna 1</th>
+					<th>Coluna 2</th>
+					<th>Coluna 3</th>
+				</tr>
+				<tr>
+					<td colspan="3">Descrição da tabela</td> <!-- colspan é usado para usar mais de 1 celula na tabela -->
+				</tr>
+			</thead>
+			<tbody> <!-- tag nao obrigatorio, pq a pagina ja insere automaticamente -->
+				<tr> <!-- table roll, coluna 1 -->
+					<td align="center">1A</td> <!-- linha 1 alinhada no centro, pode ser usada no tbody e tr. -->
+					<td>1B</td> <!-- linhas 2 -->
+					<td>1C</td> <!-- linha 3 -->
+				</tr>
+				<tr align="right"> <!-- table roll, coluna 2 -->
+					<td>2A</td>
+					<td>2B</td>
+					<td>2C</td>
+				</tr>
+				<tr> <!-- table roll, coluna 3 -->
+					<td>3A</td>
+					<td colspan="2">3BC</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">Rodapé da Tabela</td>
+				</tr>
+			</tfoot>
+		</table>
+
+		<h2>Tabela como Layout</h2>
+
+		<table width="600"> <!-- 600 pixels -->
+			<tr height="90">
+				<td colspan="4" bgcolor="#BBCCEE" align="center">Cabeçalho</td>
+			</tr>
+			<tr height="300">
+				<td width="20" bgcolor="#000FF"></td>
+				<td width="60%" bgcolor="#DDDDDD">
+					<h2>Título</h2>
+					<p>hdiashdasidhi sahdiashd asdhiasudhasi</p>
+
+				</td>
+				<td bgcolor="#EEEEEE">Coluna 2</td>
+				<td width="20" bgcolor="#000FF"></td>
+			</tr>
+			<tr>
+				<td bgcolor="#FF0000" colspan="4" align="center">Rodapé</td>
+			</tr>
+		</table>
+	</body>
+</html>

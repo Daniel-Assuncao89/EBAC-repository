@@ -1,0 +1,54 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p {
+    margin-top: 0;
+    font-weight: 100;
+    font-size: 0.8rem;
+    color: rgb(156, 154, 154);
+}
+
+table {
+    margin: 5rem 1rem;
+    padding: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(212, 212, 212);
+    box-shadow: 10px 5px 5px rgb(165, 165, 165);
+}
+th {
+    background-color: rgba(57, 57, 219, 0.973);
+    height: 2.4rem;
+    width: 10%;
+    color: aliceblue;
+    font-weight: 100;
+}
+
+td, tr {
+    font-weight: 100;
+    height: 2.4rem;
+    width: 10%;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(200, 247, 255);
+}
+
+thead > tr > td {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900; 
+}
+
+
+.blackLetter {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-align: center;
+    padding-left: 0;
+}
