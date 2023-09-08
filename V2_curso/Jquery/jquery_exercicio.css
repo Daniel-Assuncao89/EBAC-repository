@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    
+}
+
+.container h1 {
+    margin-bottom: 16px;
+}
+
+.container input, button {
+    padding: 5px;
+}
+
+.click-tarefa {
+    cursor: pointer;
+}
