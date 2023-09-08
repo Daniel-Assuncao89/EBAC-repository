@@ -46,4 +46,16 @@ $(document).ready( ()=>{
             };
         }
     })
-} )
+
+    $('.lista-veiculos button').click( function() {
+        const destino = $('#contato');
+        const nomeVeiculo = $(this).parent().find('h3').text(); // this represente o proprio objeto. Não funciona com arrow function (perguntar o pq)
+
+        $('#veiculo-interesse').val(nomeVeiculo) // Seta no valor do campo o texto obtido com o click
+
+        $('html').animate({
+            scrollTop: destino.offset().top //Retorno a distancia do objeto para o Topo. offset: distancia ; .top : de referencia
+        }, 1000)
+    })
+
+})
