@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-image: url(https://cdn.pixabay.com/photo/2023/05/16/14/07/bridge-7997690_640.jpg);
+            height: 100vh;
+            width: 100vh;
+            background-repeat: no-repeat;
+            background-color: red;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <picture>
+        <source media="(max-width: 1024px )"
+            srcset="https://cdn.pixabay.com/photo/2023/05/16/14/07/bridge-7997690_640.jpg">
+        <source media="(min-width: 1280px)"
+            srcset="https://cdn.pixabay.com/photo/2023/08/30/17/59/snowflakes-8223860_1280.jpg">
+        <img src="https://cdn.pixabay.com/photo/2023/05/25/07/31/woman-8016553_640.jpg" alt="">
+    </picture>
+    <div></div>
+</body>
+
+</html>
