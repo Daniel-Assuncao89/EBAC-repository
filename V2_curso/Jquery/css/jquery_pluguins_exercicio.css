@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    display: flex;
+    font-weight: bold;
+}
+
+.dual-campo {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-campo input {
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+button {
+    width: 90%;
+    padding: 10px;
+    margin-left: 1rem;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    background-color: green;
+    color: whitesmoke;
+}
