@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        table {
+            max-width: 500px;
+        }
+
+        #preco p {
+            width: 300px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Entre em contato</h2>
+                <form>
+                    <label class="form-label" for="nome">Seu nome:</label>
+                    <input class="form-control" type="text" id="nome">
+                    <label for="email" class="form-label">Seu e-mail</label>
+                    <input id="email" type="email" class="form-control">
+                    <label for="telefone" class="form-label">Telefone:</label>
+                    <input id="telefone" type="tel" class="form-control">
+                    <div class="form-check form-switch">
+                        <label for="aceito-termos" class="form-check-label">Li e aceito os termos do site</label>
+                        <input type="checkbox" id="aceito-termos" class="form-check-input">
+                    </div>
+                    <button class="btn btn-success">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
