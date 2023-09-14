@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        table {
+            max-width: 500px;
+        }
+
+        #preco p {
+            width: 300px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-success">
+                    Confira as novidades do blog <a href="#">clicando aqui</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Ultimas postagens</h2>
+                <div class="container g-0">
+                    <div class="row">
+                        <div class="col-md-4 post">
+                            <img src="//via.placeholder.com/180x180" alt="">
+                            <h4 class="h5">Título da postagem</h4>
+                            <time>10/08/2022</time>
+                            <a class="btn btn-primary btn-sm">Leia mais</a>
+                        </div>
+                        <div class="col-md-4 post">
+                            <img src="//via.placeholder.com/180x180" alt="">
+                            <h4 class="h5">Título da postagem</h4>
+                            <time>10/08/2022</time>
+                            <a class="btn btn-primary btn-sm">Leia mais</a>
+                        </div>
+                        <div class="col-md-4 post">
+                            <img src="//via.placeholder.com/180x180" alt="">
+                            <h4 class="h5">Título da postagem</h4>
+                            <time>10/08/2022</time>
+                            <a class="btn btn-primary btn-sm">Leia mais</a>
+                        </div>
+                        <div class="col-md-4 post">
+                            <img src="//via.placeholder.com/180x180" alt="">
+                            <h4 class="h5">Título da postagem</h4>
+                            <time>10/08/2022</time>
+                            <a class="btn btn-primary btn-sm">Leia mais</a>
+                        </div>
+                        <div class="col-md-4 post">
+                            <img src="//via.placeholder.com/180x180" alt="">
+                            <h4 class="h5">Título da postagem</h4>
+                            <time>10/08/2022</time>
+                            <a class="btn btn-primary btn-sm">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-end">
+                <div>
+                    <h2>Anunciantes</h2>
+                    <img src="//via.placeholder.com/180x180" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2>Entre em contato</h2>
+            <form>
+                <label class="form-label" for="nome">Seu nome:</label>
+                <input class="form-control" type="text" id="nome">
+                <label for="email" class="form-label">Seu e-mail</label>
+                <input id="email" type="email" class="form-control">
+                <label for="mensagem" class="form-label">Sua mensagem:</label>
+                <textarea id="mensagem" class="form-control"></textarea>
+                <div class="form-check form-switch">
+                    <label for="aceito-termos" class="form-check-label">Li e aceito os termos do site</label>
+                    <input type="checkbox" id="aceito-termos" class="form-check-input">
+                </div>
+                <button class="btn btn-success">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="alert alert-danger alert-dismissible mt-5">
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+        Sou uma mensagem de informação
+    </div>
+
+
+    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#preco">
+        Ver preço
+    </button>
+    <div class="collapse collapse-horizontal" id="preco">
+        <p>
+            3x de R$ 300,00
+        </p>
+    </div>
+
+
+
+    <div class="accordion mt-5">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta1">
+                    Pergunta
+                </button>
+            </div>
+            <div id="resposta1" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    Resposta da pergunta
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta2">
+                    Pergunta 2
+                </button>
+            </div>
+            <div id="resposta2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    Resposta da pergunta 2
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container mb-5 mt-5">
+        <button class="btn btn-link">Clique aqui</button>
+        <button class="btn btn-outline-info btn-lg">Clique aqui</button>
+        <button class="btn btn-outline-warning btn-md">Clique aqui</button>
+    </div>
+
+
+    <table class="table table-info">
+        <caption>Tabela de produtos</caption>
+        <thead>
+            <th>Nome do produto</th>
+            <th>Preço Original</th>
+            <th>Preço Atual</th>
+            <th>Desconto</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Iphone 13</td>
+                <td>R$ 7.000,00</td>
+                <td>R$ 5.000,00</td>
+                <td>R$ 2.000,00</td>
+            </tr>
+            <tr>
+                <td>Iphone 13</td>
+                <td>R$ 7.000,00</td>
+                <td>R$ 5.000,00</td>
+                <td>R$ 2.000,00</td>
+            </tr>
+            <tr>
+                <td>Iphone 13</td>
+                <td>R$ 7.000,00</td>
+                <td>R$ 5.000,00</td>
+                <td>R$ 2.000,00</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h1 class="display-1">Teste</h1>
+    <p class="h6">
+        <mark>Texto em destaque</mark> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vitae, in esse
+        odio atque quam facilis labore illo, perferendis ea sed eaque temporibus sunt voluptas, rerum veritatis fugit
+        architecto deleniti.
+    </p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-8">
+                <img src="//via.placeholder.com/180x180" alt="">
+                <h3>Produto</h3>
+            </div>
+            <div class="col-sm-6 col-lg-8">
+                <img src="//via.placeholder.com/180x180" alt="">
+                <h3>Produto</h3>
+            </div>
+            <div class="col-sm-6 col-lg-8">
+                <img src="//via.placeholder.com/180x180" alt="">
+                <h3>Produto</h3>
+            </div>
+            <div class="col-sm-6 col-lg-8">
+                <img src="//via.placeholder.com/180x180" alt="">
+                <h3>Produto</h3>
+            </div>
+            <div class="col-sm-6 col-lg-8">
+                <img src="//via.placeholder.com/180x180" alt="">
+                <h3>Produto</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    <h1>Olá Bootstrap</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-8 g-0">
+                <h2>Destaque</h2>
+            </div>
+            <div class="col-sm-12 col-lg-4 g-0">
+                <h2>Barra lateral</h2>
+            </div>
+            <div class="col">
+                Coluna #3
+            </div>
+            <div class="col">
+                Coluna #4
+            </div>
+            <div class="col">
+                Coluna #5
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
