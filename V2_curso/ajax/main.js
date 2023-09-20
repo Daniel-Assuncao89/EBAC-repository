@@ -48,8 +48,7 @@ $(document).ready(function(){
             const estado = json.uf;
             const endereco = `${logradouro}, ${bairro} - ${cidade} - ${estado}`;
             $('#endereco').val(endereco)
-        })
-        .catch(function(error){
+        }).catch(function(error){
             console.log(error)
             alert("Ocorreu um erro ao buscar o endereço, tente novamente mais tarde")
         }).finally(function(){
@@ -60,5 +59,11 @@ $(document).ready(function(){
         })
     })
 
+    $('#formulario-pedido').submit(function(evento){
+        evento.preventDefault();
+        if ($('#nome').val().length == 0 ) {
+            throw new Error('Digite o nome');
+        }
+    })
 })
 
